@@ -1,0 +1,182 @@
+# data:
+#   raw_path: "data/raw/sales_data_final.csv"
+#   inventory_path: "data/raw/inventory_dataset.csv"
+#   waste_inventory_path: "data/raw/inventory_data.csv"
+
+#   processed_path: "data/processed/features.csv"
+#   output_path: "data/output/predictions.csv"
+#   recipe_path: "data/raw/recipes.csv"
+#   cost_path: "data/raw/cost_optimization.csv"
+
+#   # Vision Analysis paths
+#   raw_waste_image_path: "data/raw/waste_food_dataset"
+#   raw_waste_heatmap_path: "data/raw/waste_heatmap_dataset"
+#   sample_waste_images:
+#     - "waste-fruits.jpg"
+#     - "watermelon_waste.jpg"
+#     - "pumpkin.jpeg"
+#     - "inedible-waste.jpeg"
+#     - "food-in-dustbin.jpg"
+#     - "container-waste.webp"
+#     - "food-waste-disposers.jpg"
+#     - "food-waste.webp"
+#     - "rotten-fruits.jpg"
+#     - "rotten-fruits-2.jpg"
+#   sample_waste_heatmap_images:
+#     - "kitchen-waste.jpg"
+#     - "carton.jpg"
+#     - "food-waste-2.jpg"
+#     - "fresh-food-2.jpg"
+#     - "fresh-food.jpg"
+#     - "food.jpg"
+#     - "food.jpeg"
+#     - "food-waste.webp" 
+#     - "food-waste.jpg"
+#   output_waste_classification_path: "data/output/waste_classification/food_waste_log.csv"
+#   output_waste_heatmap_path: "data/output/waste_heatmap/food_waste_heatmap.jpg"
+#   output_waste_detections_path: "data/output/waste_heatmap/food_waste_detections.jpg"
+
+#   raw_spoilage_image_path: "data/raw/fresh_rotten_dataset"
+#   sample_spoilage_images:
+#     - "rotten-strawberry.jpg"
+#     - "rotten-fruits.jpg"
+#     - "rotten-fruits-2.jpg"
+#     - "rotten-orange.jpg"
+#     - "mixed-fruits.jpg"
+#     - "carrot.jpg"
+#     - "tomato.jpg"
+#     - "banana.jpg"
+  
+#   # Output paths
+#   output_spoilage_path: "data/output/spoilage_detection/food_freshness_log.csv"
+#   log_path: "data/output/spoilage_detection/spoilage_detection.log"
+
+#   # Inventory tracking paths
+#   raw_inventory_image_path: "data/raw/food_dataset"
+#   output_inventory_image_path: "data/output/detection_images"
+#   output_inventory_csv_path: "data/output/stock_prediction/predicted_items.csv"
+
+# model:
+#   # path: "models/xgboost_model.pkl"
+#   path: "models/prophet_models"
+#   name: "llama-3.2-90b-vision-preview"
+#   max_tokens: 512
+#   temperature: 0.0
+#   retry:
+#     max_attempts: 3
+#     min_wait: 2
+#     max_wait: 10
+#   inventory_model_path: "models/food_detection_model"
+#   waste_classification_model: "google/owlvit-base-patch32"
+#   waste_heatmap_model: "google/owlvit-base-patch32"
+
+# prophet:
+#   yearly_seasonality: true
+#   weekly_seasonality: true
+#   daily_seasonality: false
+# xgboost:
+#   max_depth: 6
+#   learning_rate: 0.05
+#   n_estimators: 200
+# prediction:
+#   days_ahead: 7  # Predict next 7 days
+# recommendation:
+#   expiration_threshold_days: 3
+
+
+
+
+
+
+
+
+
+data:
+  raw_path: "data/raw/sales_data_final.csv"
+  inventory_path: "data/raw/inventory_dataset.csv"
+  waste_inventory_path: "data/raw/inventory_data.csv"
+  processed_path: "data/processed/features.csv"
+  output_path: "data/output/predictions.csv"
+  sales_data_file: "data/output/synthetic_sales_data.csv"
+  recipe_path: "data/raw/recipes.csv"
+  cost_path: "data/raw/cost_optimization.csv"
+  output_dashboard_path: "data/output/reports"
+  # Vision Analysis paths
+  raw_waste_image_path: "data/raw/waste_food_dataset"
+  raw_waste_heatmap_path: "data/raw/waste_heatmap_dataset"
+  
+  sample_waste_images:
+    - "waste-fruits.jpg"
+    - "watermelon_waste.jpg"
+    - "pumpkin.jpeg"
+    - "inedible-waste.jpeg"
+    - "food-in-dustbin.jpg"
+    - "container-waste.webp"
+    - "food-waste-disposers.jpg"
+    - "food-waste.webp"
+    - "rotten-fruits.jpg"
+    - "rotten-fruits-2.jpg"
+  sample_waste_heatmap_images:
+    - "kitchen-waste.jpg"
+    - "carton.jpg"
+    - "food-waste-2.jpg"
+    - "fresh-food-2.jpg"
+    - "fresh-food.jpg"
+    - "food.jpg"
+    - "food.jpeg"
+    - "food-waste.webp" 
+    - "food-waste.jpg"
+  output_waste_classification_path: "data/output/waste_classification/food_waste_log.csv"
+  output_waste_heatmap_path: "data/output/waste_heatmap/food_waste_heatmap.jpg"
+  output_waste_detections_path: "data/output/waste_heatmap/food_waste_detections.jpg"
+
+  raw_spoilage_image_path: "data/raw/fresh_rotten_dataset"
+  sample_spoilage_images:
+    - "rotten-strawberry.jpg"
+    - "rotten-fruits.jpg"
+    - "rotten-fruits-2.jpg"
+    - "rotten-orange.jpg"
+    - "mixed-fruits.jpg"
+    - "carrot.jpg"
+    - "tomato.jpg"
+    - "banana.jpg"
+  
+  # Output paths
+  output_spoilage_path: "data/output/spoilage_detection/food_freshness_log.csv"
+  log_path: "data/output/spoilage_detection/spoilage_detection.log"
+
+  # Inventory tracking paths
+  raw_inventory_image_path: "data/raw/food_dataset/apple.jpg"
+  output_inventory_image_path: "data/output/detection_images/apple.jpg"
+  output_annotated_image_path: "data/output/detection_images/apple.jpg"
+  video_image_path: "data/raw/food_dataset/istockphoto-1008485276-640_adpp_is (1).mp4"
+  output_video_image_path: "data/output/stock_prediction/output_video.mp4"
+  output_csv_count_path: "data/output/stock_prediction/output_csv_count.csv"
+  output_inventory_csv_path: "data/output/stock_prediction/predicted_items.csv"
+
+model:
+  # path: "models/xgboost_model.pkl"
+  path: "models/prophet_models"
+  name: "meta-llama/llama-4-scout-17b-16e-instruct"
+  max_tokens: 512
+  temperature: 0.0
+  retry:
+    max_attempts: 3
+    min_wait: 2
+    max_wait: 10
+  inventory_model_path: "models/food_detection_model/best.pt"
+  waste_classification_model: "google/owlvit-base-patch32"
+  waste_heatmap_model: "google/owlvit-base-patch32"
+
+prophet:
+  yearly_seasonality: true
+  weekly_seasonality: true
+  daily_seasonality: false
+xgboost:
+  max_depth: 6
+  learning_rate: 0.05
+  n_estimators: 200
+prediction:
+  days_ahead: 7  # Predict next 7 days
+recommendation:
+  expiration_threshold_days: 3

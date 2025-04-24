@@ -1,0 +1,37 @@
+# Core dependencies
+pandas==2.2.2
+numpy==1.26.4
+pyyaml>=6.0.1
+scikit-learn
+opencv-python
+
+# Machine Learning
+xgboost>=2.0.0
+prophet>=1.1.4
+
+# API
+openai==1.23.0
+python-dotenv==1.0.1
+fastapi>=0.95.0
+uvicorn>=0.21.0
+python-multipart>=0.0.6
+
+# LangChain
+langchain>=0.1.16
+langchain-community>=0.0.20
+langchain-groq>=0.0.1 
+tenacity>=8.2.3
+
+# PyTorch
+torch>=2.2.0
+torchvision>=0.17.0
+torchaudio>=2.2.0
+
+# Computer Vision
+ultralytics
+groq
+requests
+pillow
+transformers
+torchvision
+torchcam
