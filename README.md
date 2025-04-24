@@ -46,48 +46,26 @@
 Final/
 ├── backend/
 │   ├── config/
-│   ├── data/
-│   ├── models/
-│   ├── __pycache__/
 │   ├── src/
-│   ├── static/
-│   ├── temp/
-│   ├── templates/
-│   ├── tests/
 │   ├── api.py
-│   ├── cost_optimizer.log
-│   ├── food_spoilage_detector.log
 │   ├── main.py
 │   ├── partial_waste_predictions.csv
-│   ├── README.md
-│   ├── recipe_generator.log
 │   ├── requirements.txt
 │   ├── run_api.sh
-│   ├── test_modules.py
-│   └── waste_predictor.log
 │
 ├── frontend/
-│   ├── dist/
-│   ├── node_modules/
 │   ├── public/
 │   ├── src/
-│   ├── bun.lockb
 │   ├── components.json
 │   ├── eslint.config.js
 │   ├── index.html
-│   ├── package.json
 │   ├── package-lock.json
 │   ├── postcss.config.js
-│   ├── README.md
 │   ├── tailwind.config.ts
 │   ├── tsconfig.app.json
 │   ├── tsconfig.json
 │   ├── tsconfig.node.json
 │   └── vite.config.ts
-│ 
-│   ├── requirements.txt
-│   ├── LICENSE
-│   ├── README.md
 ```
 
 ---
