@@ -43,7 +43,7 @@
 ## 📁 Folder Structure
 
 ```
-Final/
+smart-resto/
 ├── backend/
 │   ├── config/
 │   ├── src/
