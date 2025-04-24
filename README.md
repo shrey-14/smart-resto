@@ -88,13 +88,13 @@ pip install -r requirements.txt
 
 ### 3. Run the application
 
-Start the frontend services:
+Start the frontend (ReactJS):
 ```bash
 cd frontend
 npm run dev
 ```
 
-Start the backend services:
+Start the backend (FastAPI):
 ```bash
 cd backend
 ./run_api.sh
