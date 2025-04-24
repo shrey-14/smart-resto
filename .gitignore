@@ -25,7 +25,7 @@ frontend/.cache/
 frontend/coverage/
 frontend/*.log
 frontend/package-lock.json  # Optional: Include if you use yarn or bun exclusively
-frontend/.bun-lockb        # Bun lock file
+frontend/bun-lockb        # Bun lock file
 frontend/pnpm-lock.yaml    # Optional: If you use pnpm
 
 # Backend (FastAPI Python)
