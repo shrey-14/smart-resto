@@ -34,7 +34,7 @@
 |--------------------------|---------------------|
 | Visual Detection          | YOLOv8              |
 | Forecasting               | XGBoost, Prophet    |
-| Generative AI             | LLaMA 3.1 / 3.2 via Groq API |
+| Generative AI             | LLaMA 3.1 / 4 via Groq API |
 | Waste Visualization       | OWL-ViT, Plotly     |
 | Interface                 | Web UI (custom)     |
 
