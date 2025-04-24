@@ -82,12 +82,23 @@ cd SmartResto
 ### 2. Install requirements
 
 ```bash
+cd backend
 pip install -r requirements.txt
 ```
 
 ### 3. Run the application
 
-Start the backend services and web interface as per your deployment structure (e.g., FastAPI, Flask, Streamlit, or Django).
+Start the frontend services:
+```bash
+cd frontend
+npm run dev
+```
+
+Start the backend services:
+```bash
+cd backend
+./run_api.sh
+```
 
 ---
 
