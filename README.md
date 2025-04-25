@@ -107,7 +107,7 @@ cd backend
 | Task                          | Model                       | Metric             |
 |-------------------------------|-----------------------------|--------------------|
 | Inventory Tracking            | YOLOv8                      | mAP@50 = 0.526     |
-| Food Spoilage Detection       | LLaMA 3.2 - 90b Vision       | Accuracy = 70%     |
+| Food Spoilage Detection       | LLaMA 4 Scout model         | Accuracy = 70%     |
 | Sales Forecasting             | XGBoost, Prophet            | MAPE = 10–14%      |
 | Waste Prediction              | LLaMA 3.1 - 8b Instruct      | ROUGE metrics      |
 | Waste Heatmap & Dashboard     | OWL-ViT + Plotly             | Visual Accuracy    |
